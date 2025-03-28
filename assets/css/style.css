@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-main: #131215;
+    --color-secundary: #ECECEC;
+    --color-font: #fff;
+    --color-btn: #DC1D1C;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-secundary);
+    color: var(--color-font);
+}
+
+@layer main {
+
+    .header {
+        background-color: var(--color-main);
+        width: 100vw;
+        min-height: 250px;
+    }
+
+    .container {
+        margin-top: -150px !important;
+        width: 65%;
+        margin: 0 auto !important;
+        z-index: 5;
+    }
+
+    .form-warpred {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .formulario {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form-header {
+        margin-top: -150px !important;
+        width: 100%;
+        min-height: 85px;
+    }
+
+    form {
+        width: 450px;
+        background-color: #FFF;
+        padding: 20px !important;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--color-main);
+    }
+
+    input[type="text"] {
+        width: 100% !important;
+        border-radius: 5px;
+        border: none;
+        border: solid 1px black;
+        padding: 10px;
+        margin-top: 10px !important;
+        height: 35px;
+        width: 50%;
+        text-align: center;
+    }
+
+    button[type="submit"] {
+        background-color: var(--color-btn);
+        border: none;
+        padding: 15px !important;
+        font-weight: bolder;
+        color: #FFF;
+        font-size: 1.2rem;
+        width: 410px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+}
